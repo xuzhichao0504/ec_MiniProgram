@@ -25,6 +25,12 @@
 
 微信小程序前端设计与制作品质[专项能力层]	计算思维
 
+<img src="http://xuzhichao.xyz//ec_program/index.jpg" height="500px">   <img src="http://xuzhichao.xyz//ec_program/goods.jpg" height="500px"><img src="http://xuzhichao.xyz//ec_program/car.jpg" height="500px">  
+
+
+
+
+
 ### 4	微信小程序云服务器搭建（从0到1认识云服务器）	1课时	
 
 #### 本章内容：腾讯云搭建、Linux系统搭建	
