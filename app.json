@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/first/first",
+    
+    "pages/user/user",
+    "pages/index/good/detail/detail",
+    
+    "pages/goods/goods",
+    "pages/index/good/good",
+    "pages/cart/cart",
+    "pages/user/order/order",
+    "pages/user/order/detail/detail",
+    "pages/addr/edit/edit",
+    
+    "pages/addr/addr",
+    "pages/address/address",
+    "pages/goods-details/goods-details"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#FF4500",
+    "navigationBarTitleText": "Digital_electricity",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/12.png",
+        "selectedIconPath": "image/11.png"
+      },
+      {
+        "pagePath": "pages/goods/goods",
+        "iconPath": "image/22.png",
+        "selectedIconPath": "image/21.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "image/32.png",
+        "selectedIconPath": "image/31.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人中心",
+        "iconPath": "image/42.png",
+        "selectedIconPath": "image/41.png"
+      }
+    ]
+  }
+}
