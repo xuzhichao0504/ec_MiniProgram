@@ -1,0 +1,52 @@
+<!--index.wxml-->
+<view>
+  <swiper id="banner" interval="3000" duration="1000" autoplay circular current="1" indicator-dots indicator-color="rgba(0, 0, 0, .3)">
+    <block wx:for="{{imgUrls}}" wx:key="swiper">
+      <swiper-item>
+        <view bindtap='swiperchange' data-swiper="{{item}}">
+          <image src="{{item.image}}" mode="scaleToFill" style="width:750rpx;height:400rpx;"></image>
+          <text>{{item.id}}</text>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view id='types'>
+    <block wx:for="{{typelist}}" wx:key='id'>
+      <view class='list-item' bindtap="navigateToShop" data-id="{{item.id}}">
+        <view class='item-head'>
+          <image src="../../image/{{item.pic}}.png" mode="aspectFit"></image>
+        </view>
+        <view class='item-foot'>
+          {{item.name}}
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view>
+    <block wx:for="{{typelist}}" wx:key="id">
+      <view class='goodlist'>
+        <view class='good-head' bindtap="navigateToShop" data-id="{{item.id}}">
+          <text>{{item.name}}</text>
+          <text class='right more'></text>
+        </view>
+        <view class='good-body'>
+          <block wx:for="{{item.goods}}" wx:key="id" wx:for-item="good">
+            <view class='good-item' bindtap="navigateToGood" data-id="{{good.mid}}">
+              <view class='good-pic'>
+                <image src="{{good.pic}}" mode="aspectFill"></image>
+              </view>
+              <view class='good-desc'>
+                <view >{{good.title}}</view>
+                <text class='good-price'>$ {{good.price}} </text>
+                <text class='good-price' hidden="{{!good.isHighlyRecommended}}">推荐</text>
+              </view>
+            </view>
+          </block>
+        </view>
+      </view>
+    </block>
+  </view>
+
+</view>

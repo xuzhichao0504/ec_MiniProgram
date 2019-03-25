@@ -1,0 +1,41 @@
+<!--pages/user/user.wxml-->
+<view id="userhead" bindlongtap="showUserTip" bindtap="showUserTip">
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+</view>
+<!-- <view class="address-box">
+  <view class="address-manage">
+    <navigator url="/pages/address/address">地址管理</navigator>
+  </view>
+  <view wx:if="{{hasAddress}}" class="address-list">
+    <view>{{address.name}}</view>
+    <view>{{address.phone}}</view>
+    <view>{{address.detail}}</view>
+  </view>
+</view> -->
+
+
+
+<view id="other">
+  <view id='addr' bindtap="navigateToAddr">
+    <image src='http://xuzhichao.xyz/%E5%9C%B0%E5%9D%80.png' mode="scaleToFill" style="width:60rpx;height:60rpx;"></image>
+    我的地址
+  </view>
+
+  <view id='order'>
+    <view class='order-item' bindtap="navigateToOrder">
+      <image src='http://xuzhichao.xyz/%E6%88%91%E7%9A%84%E8%AE%A2%E5%8D%95.png' mode="scaleToFill" style="width:50rpx;height:50rpx;"></image>
+      <text class='more'>全部订单</text>
+    </view>
+    <view class='order-item' bindtap="navigateToOrder_pay">
+      <image src='http://xuzhichao.xyz/%E5%BE%85%E6%94%B6%E6%AC%BE%E5%AF%B9%E8%B4%A6%E5%8D%95.png' mode="scaleToFill" style="width:60rpx;height:60rpx;"></image>
+      <text class='more'>待付款</text>
+    </view>
+    <view class='order-item' bindtap="navigateToOrder_get">
+      <image src='http://xuzhichao.xyz/%E5%BE%85%E6%94%B6%E8%B4%A7.png' mode="scaleToFill" style="width:60rpx;height:60rpx;"></image>
+      <text class='more'>待收货</text>
+    </view>
+  </view>
+</view>

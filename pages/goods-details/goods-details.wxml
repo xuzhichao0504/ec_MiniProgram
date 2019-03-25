@@ -1,0 +1,2 @@
+<view>{{mid}}</view>
+<image src='{{mimage}}'></image>

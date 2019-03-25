@@ -1,0 +1,83 @@
+/* pages/user/user.wxss */
+
+#userhead {
+  padding: 40rpx 0rpx 30rpx 70rpx;
+  background-color: #f13;
+}
+.address-box{
+    border-bottom: 20rpx solid #ededed;
+    color: #999;
+    line-height: 90rpx;
+    font-size: 28rpx;
+}
+.address-box .address-manage{
+    position: relative;
+    height: 90rpx;
+    border-bottom: 1rpx solid #e9e9e9;
+    text-align: center;
+}
+.address-box .address-manage::after{
+    position: absolute;
+    right: 30rpx;
+    top: 34rpx;
+    content: '';
+    width: 16rpx;
+    height: 16rpx;
+    border-top: 4rpx solid #7f7f7f;
+    border-right: 4rpx solid #7f7f7f;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.address-box .address-list{
+    padding-left: 30rpx;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  padding: 0rpx 0rpx 10rpx 50rpx;
+  color: blanchedalmond;
+  font-size: 20px;
+  position: relative;
+  bottom: 50rpx;
+}
+
+#other {
+  margin: 40rpx 0px;
+}
+
+#addr {
+  line-height: 30px;
+  margin: 10rpx 0px;
+  padding: 20rpx 0px 20rpx 20rpx;
+  border: solid #ccc 1px;
+  border-left: none;
+  border-right: none;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 20rpx center;
+}
+
+#order {
+  margin: 30rpx 0px;
+  background-color: white;
+  border-top: solid #ccc 1px;
+}
+
+.order-item {
+  line-height: 30px;
+  padding: 20rpx 0px 20rpx 20rpx;
+  border-bottom: 1px #ccc solid;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 15rpx 25rpx;
+}
+
+.more {
+  float: right;
+  height: 80rpx;
+  width: 650rpx;
+}

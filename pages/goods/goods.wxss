@@ -1,0 +1,149 @@
+
+
+page,.main{
+    height: 100%;
+}
+.categroy-left{
+    float: left;
+    width: 150rpx;
+    height: 100%;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+}
+.categroy-left .cate-list{
+    height: 90rpx;
+    line-height: 90rpx;
+    text-align: center;
+    border-left: 3px solid #fff;
+    font-size:30rpx;
+
+}
+.categroy-left .cate-list.on{
+    color: #AB956D;
+    border-color: #AB956D;
+}
+.categroy-right{
+    float: right;
+    width: 600rpx;
+    height: 100%;
+    overflow: hidden;
+    
+}
+.cate-box{
+    height: 100%;
+    padding:40rpx;
+    box-sizing: border-box;
+}
+.cate-box .cate-banner image{
+    display: block;
+    width: 100%;
+    height: 190rpx;
+}
+.cate-title{
+    position: relative;
+    height: 30rpx;
+    line-height: 30rpx;
+    padding:30rpx 0 55rpx;
+    text-align: center;
+    color: #AB956D;
+    font-size: 28rpx;
+}
+.cate-title::before{
+    position: absolute;
+    left: 130rpx;
+    top: 43rpx;
+    content: '';
+    width: 70rpx;
+    height: 4rpx;
+    background: #AB956D;
+}
+.cate-title::after{
+    position: absolute;
+    right: 130rpx;
+    top: 43rpx;
+    content: '';
+    width: 70rpx;
+    height: 4rpx;
+    background: #AB956D;
+}
+.navi1{
+  position:absolute;
+  top:340rpx;
+  left:300rpx;
+
+
+}
+.navi2{
+  position:absolute;
+  top:1450rpx;
+  left:300rpx;
+}
+.navi3{
+  position:absolute;
+  top:2560rpx;
+  left:300rpx;
+}
+.navi4{
+  position:absolute;
+  top:3670rpx;
+  left:300rpx;
+}
+.navi5{
+  position:absolute;
+  top:4780rpx;
+  left:300rpx;
+}
+.navi6{
+  position:absolute;
+  top:5890rpx;
+  left:300rpx;
+}
+.navi7{
+  position:absolute;
+  top:7000rpx;
+  left:300rpx;
+}
+.navi8{
+  position:absolute;
+  top:8110rpx;
+  left:300rpx;
+}
+
+.product-list{
+    display: inline-block;
+    width: 160rpx;
+    height: 160rpx;   
+    margin:0 20rpx 20rpx 0;
+    font-size: 24rpx;
+    
+}
+.product-list image{
+    width: 200rpx;
+    height: 200rpx;
+    margin-bottom: 20rpx;
+   
+}
+.product-list:nth-child(3n){
+    margin-right: 0;
+}
+
+.good-pic image{
+	width: 200rpx;
+	height: 200rpx;
+}
+
+.good-price{
+  font-size: 20rpx;
+	color: orangered;
+}
+
+.good-item {
+  padding: 10rpx 10rpx;
+  width: 240rpx;
+  float: left;
+  height:300rpx 	
+}
+
+.good-title{
+  font-size: 20rpx
+}
